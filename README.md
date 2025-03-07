@@ -22,7 +22,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 1: Create a Virtual Machine/Resource Group.
 - Step 2: Log into Virtual Machine
 - Step 3: Install Active Directory Domain Services.
-- Step 4
+- Step 4: Set-up a new forest as 'mydomain.com.'
+- Step 5: Log out and Restart Domain Controller as user: mydomain.com\user.
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -54,7 +55,7 @@ I open Active Directory Computers and Users window. In that window, I click on t
 <img src="https://i.imgur.com/VmQk9RE.png) height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I create users to add to my folders, in this case, it is Jane Doe.
+I create users to add to my folders, in this case, it is Jane Doe with a username and password.
 </p>
 <br />
 
@@ -70,6 +71,6 @@ I add Jane Doe to the Security Group, _Admins.
 <img src="https://i.imgur.com/O4NVP6J.png) height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I log out of my Domain Controller and log back in as Jane Doe with new Log-in and Password: mydomain.com\jane_admin.
 </p>
 <br />
